@@ -1,100 +1,7 @@
 
 
+  
 
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-
-    /**
-     * colors
-     */
-  
-    --light-steel-blue: hsl(218, 33%, 77%);
-    --royal-blue-light: hsl(225, 68%, 53%);
-    --flickr-blue_30: hsla(225, 68%, 53%, 0.3);
-    --carolina-blue: hsl(201, 92%, 47%);
-    --oxford-blue-1: hsl(218, 70%, 18%);
-    --oxford-blue-2: hsl(217, 100%, 12%);
-    --oxford-blue-3: hsl(218, 71%, 11%);
-    --gainsboro_50: hsla(0, 0%, 85%, 0.5);
-    --lavender-web: hsl(225, 67%, 91%);
-    --sonic-silver: hsl(0, 0%, 47%);
-    --light-gray: hsl(0, 0%, 84%);
-    --cultured: hsl(0, 0%, 97%);
-    --black_10: hsla(0, 0%, 0%, 0.1);
-    --black_8: hsla(0, 0%, 0%, 0.08);
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%);
-    --jet: hsl(0, 0%, 20%);
-  
-    /**
-     * gradient color
-     */
-  
-    --gradient: linear-gradient( 90deg, var(--carolina-blue) 0%, var(--royal-blue-light) 100%);
-  
-    /**
-     * typography
-     */
-  
-    --ff-roboto: "Roboto", sans-serif;
-    --ff-poppins: "Poppins", sans-serif;
-  
-    --fs-1: 4rem;
-    --fs-2: 3.6rem;
-    --fs-3: 3.2rem;
-    --fs-4: 2.4rem;
-    --fs-5: 2.2rem;
-    --fs-6: 1.8rem;
-    --fs-7: 1.6rem;
-  
-    --fw-800: 800;
-    --fw-700: 700;
-    --fw-600: 600;
-    --fw-500: 500;
-  
-    /**
-     * spacing
-     */
-  
-    --section-padding: 120px;
-  
-    /**
-     * shadow
-     */
-  
-    --shadow-1: 4px 4px 15px var(--black_10);
-    --shadow-2: 0 10px 15px var(--black_10);
-    --shadow-3: 0px 20px 60px var(--black_8);
-    --shadow-4: 0px 10px 30px var(--flickr-blue_30);
-    --shadow-5: 0px 2px 60px 0px var(--black_10);
-  
-    /**
-     * border radius
-     */
-  
-    --radius-6: 6px;
-    --radius-4: 4px;
-  
-    /**
-     * transition
-     */
-  
-    --transition: 0.25s ease;
-    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
-  
-  }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
   
   *,
   *::before,
@@ -147,13 +54,7 @@
     font-size: 1.5rem;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #REUSED STYLE
-  \*-----------------------------------*/
+
   
   .container { padding-inline: 25px; }
   
@@ -218,13 +119,6 @@
     object-fit: cover;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #HEDER
-  \*-----------------------------------*/
   
   .header-top,
   .header-bottom .btn { display: none; }
@@ -324,28 +218,14 @@
     }
   
   
-  
-    /**
-     * RESET
-     */
-  
     body { font-size: 1.6rem; }
   
   
-  
-    /**
-     * REUSED STYLE
-     */
   
     .container { max-width: 750px; }
   
     .section-subtitle { --fs-6: 2.2rem; }
   
-  
-  
-    /**
-     * HERO
-     */
   
     .hero { overflow: hidden; }
   
@@ -377,14 +257,6 @@
   
   
   
-  
-  
-  
-  
-    /**
-     * BACK TO TOP
-     */
-  
     .back-top-btn {
       bottom: 70px;
       right: 50px;
@@ -392,65 +264,24 @@
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 992px screen
-   */
+
   
   @media (min-width: 992px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
+   
   
     :root {
   
-      /**
-       * typography
-       */
-  
+    
       --fs-2: 6rem;
       --fs-1: 4.6rem;
       --fs-3: 4.6rem;
   
     }
   
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
     .container { max-width: 980px; }
   
-  
-  
-    /**
-     * HEADER
-     */
-  
-    .header-top {
-      display: block;
-      background-color: var(--oxford-blue-1);
-      color: var(--white);
-      padding-block: 20px;
-    }
-  
-    .header-top :is(.container, .social-list),
-    .contact-list,
-    .contact-item {
-      display: flex;
-      align-items: center;
-    }
-  
-    .header-top .container { justify-content: space-between; }
-  
-    .contact-list { gap: 20px; }
-  
-    .contact-item { gap: 5px; }
+
   
     .contact-item ion-icon {
       color: var(--royal-blue-light);
@@ -459,29 +290,7 @@
   
     .contact-link { font-size: 1.5rem; }
   
-    .header-top .social-list { gap: 15px; }
-  
-    .header-top .social-link {
-      font-size: var(--fs-6);
-      transition: var(--transition);
-    }
-  
-    .header-top .social-link:is(:hover, :focus) { color: var(--royal-blue-light); }
-  
-    .header-bottom {
-        position: fixed;
-        
-        left: 0;
-        right: 0;
-        z-index: 1000; /* Assurez-vous que le header est au-dessus du reste du contenu */
-        background-color: #fff; /* Définissez la couleur de fond que vous souhaitez pour le header fixe */
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre pour un effet visuel */
-      top: 0px;
-      padding-block: 20px;
-    }
-  
-    .header-bottom.active { top: -95px; }
-  
+    
     .nav-toggle-btn { display: none; }
   
     .navbar,
@@ -506,39 +315,19 @@
   
     .navbar-link:is(:hover, :focus) { color: var(--royal-blue-light); }
   
-    .header-bottom .btn {
-      display: block;
-      padding: 15px 20px;
-    }
+    
   
   
-  
-  
-  
-  
-   
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 1200px screen
-   */
+
   
   @media (min-width: 1200px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
-  
+   
     :root {
   
-      /**
-       * typography
-       */
   
       --fs-2: 8rem;
       --fs-1: 5.5rem;
@@ -547,19 +336,9 @@
     }
   
   
-  
-    /**
-     * REUSED STYLE
-     */
-  
     .container { max-width: 1180px; }
   
-  
-  
-    /**
-     * HEADER
-     */
-  
+
     .contact-list { gap: 30px; }
   
     .header-bottom .btn { padding: 18px 30px; }
